@@ -1,6 +1,6 @@
 import http from 'http'
 import { randomUUID } from 'crypto'
-import { pipeline } from 'stream';
+import { pipeline } from 'stream/promises';
 import { createWriteStream } from 'fs';
 
 async function handler(req, res) {
